@@ -1,0 +1,60 @@
+.liked {
+    height: 850px;
+    padding-top: 75px;
+    text-align: center;
+
+    .title {
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .content {
+        margin-top: 75px;
+        display: flex;
+        justify-content: space-around;
+
+        .item {
+            width: 23%;
+            cursor: pointer;
+            text-decoration: none;
+            color: #000000;
+
+            &:hover .icon,
+            &:hover .new_season {
+                color: #e46651;
+                transition: 0.5s;
+            }
+
+            .icon {
+                text-align: right;
+                color: #c5c5c5;
+
+            }
+
+            .image {
+                img {
+                    width: 90%;
+                }
+            }
+
+            .new_season {
+                color: #73a2a8;
+                font-size: 14px;
+                font-weight: 400;
+                margin-bottom: 20px;
+            }
+            .brand {
+                font-size: 18px;
+                font-weight: 500;
+                margin-bottom: 8px;
+            }
+            .model {
+                font-size: 13px;
+                margin-bottom: 25px;
+            }
+            .price {
+                font-size: 20px;
+                font-weight: 500;
+            }
+        }
+    }
+}

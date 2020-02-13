@@ -1,0 +1,384 @@
+@media (max-width: 1300px) {
+
+    .container {
+    width: 94%;
+    }
+    .our_insta {
+        height: auto;
+    }
+    .header {
+        .top_header {
+            .left_col {
+                .item {
+                    .sub_menu {
+                        .contain {
+                            width: 90%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:800px){
+    .header {
+        height: 1000px;
+        background-image: url(../img/banner_tablet.png);
+        background-size: 90%;
+        background-repeat: no-repeat;
+        background-position-y: 20%;
+        background-position-x: right;
+
+        .top_header {
+            border-bottom: solid 1px #000000;
+            background-color: #ffffff;
+            .left_col {
+                display: none;
+            }
+            .left_col_tablet {
+                display: block;
+                width: 35%;
+
+                .menu_button {
+                    display: block;
+                    left: 20px;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    background-color: #ffffff;
+                    border: solid 1px #000000;
+                    text-align: center;
+                    line-height: 30px;
+                    cursor: pointer;
+    
+                    .menu {
+                        overflow: hidden;
+                        height: 100px;
+                        list-style: none;
+                        border-radius: 5px;
+                        position: absolute;
+                        width: 150px;
+                        text-align: center;
+                        top: 150%;
+                        display: none;
+                        border: solid 1.5px #000000;
+                        font-weight: 500;
+    
+                        li:hover {
+                            background-color: #00000030;
+                        }
+                    }
+                    input {
+                        position: absolute;
+                        opacity: 0;
+                    }
+                    input:checked ~ .menu {
+                        height: unset;
+                        display: block;
+                        transition: 0.5s;
+                    }
+                }
+                .menu_button:focus-within {
+                    cursor: pointer;
+                    transition: 0.2s;
+                }
+            }
+            .right_col {
+                .itemua {
+                    display: none;
+                }
+            }
+        }
+        .header_content {
+           width: 60%;
+           margin-top: 150px;
+
+           .title {
+               font-size: 30px;
+               letter-spacing: 1px;
+           }
+           .imprint {
+               background-image: url(../img/Отпечаток.png);
+               width: 110px;
+               height: 110px;
+               background-repeat: no-repeat;
+               margin: 20px auto 0;
+               background-size: contain;
+           }
+           .new_season {
+               margin-top: 60px;
+           }
+        }
+    }
+    .liked {
+        height: auto;
+        padding-bottom: 75px;
+        .content {
+            display: flex;
+
+            .item {
+                width: 33%;
+            }
+            .item:first-of-type {
+                display: none;
+            }
+        }
+    }
+    .line_brands {
+        height: 100px;
+
+        .brands {
+            height: 100px;
+
+            img {
+                width: 80%;
+            }
+        }
+    }
+    .about {
+        .content {
+            .col {
+                width: 48%;
+
+                .col_text {
+                    font-size: 16px;
+                    line-height: 25px;
+                    padding-left: 20px;
+                }
+            }
+        }
+    }
+    .footer {
+        height: auto;
+        padding-top: 30px;
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            .column {
+                .title {
+                    cursor: pointer;
+                    margin-bottom: 10px;
+                }
+                .cards {
+                    height: 0;
+                    overflow: hidden;
+                    transition: 0.5s;
+                    align-items: center;
+                    margin-bottom: 10px;
+                    
+                }
+                .services {
+                    height: 0;
+                    overflow: hidden;
+                    transition: 0.5s;
+                    align-items: center;
+                    margin-bottom: 10px;
+                }
+                .socials {
+                    height: 0;
+                    overflow: hidden;
+                    transition: 0.5s;
+                    align-items: center;
+                    margin-bottom: 10px;
+                }
+                .title+input:checked+.cards {
+                    height: 50px;
+                    margin: 10px 0;
+                }
+                .country, .ua, .app, .phone {
+                    display:none;
+                }
+                .title+input:checked+.socials {
+                    height: 50px;
+                    margin: 10px 0;
+                }
+                .title+input:checked+.services {
+                    height: 300px;
+                    margin: 10px 0;
+                }
+            }
+        }
+        .rights {
+            margin-top: 50px;
+        }
+    }
+}
+@media (max-width:450px) {
+    .header {
+        height: 500px;
+        background-position-y: 50%;
+        .top_header {
+            .logo {
+                font-size: 20px;
+                font-weight: 500;
+            }
+            .right_col {
+                
+                .item {
+                    margin-left: 10px;
+                    border: none;
+                    i {
+                        
+                        font-size: 20px;
+                    }
+                }
+                .item:nth-child(2) {
+                    display: none;
+                }
+            }
+        }
+        .header_content {
+            width: 170px;
+            .title {
+                display: none;
+            }
+            .imprint {
+                display: none;
+            }
+            .new_season {
+                font-size: 15px;
+                font-weight: 500;
+            }
+            .brand {
+                font-size: 18px;
+                font-weight: 500;
+                margin-top: 10px;
+            }
+            .model {
+                margin-top: 0;
+                font-weight: 500;
+            }
+            .price {
+                font-size: 20px;
+                font-weight: 700;
+                margin-top: 10px;
+            }
+            .header_button {
+                display: none;
+            }
+            .header_button_phone {
+                display: block;
+                background-color: #73a2a8;
+                color: #ffffff;
+                padding: 5px 15px;
+                font-size: 16px;
+                cursor: pointer;
+                margin: 0 auto;
+                max-width: 140px;
+                margin-top: 30px;
+                border-radius: 5px;
+                text-decoration: none;
+    
+                &:hover {
+                    background: #e46651;
+                    transition: 0.5s;
+                }
+            }
+
+        }
+    }
+    .liked {
+        padding-top: 25px;
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 10px;
+            
+            .item:first-of-type {
+                display: block;
+            }
+            .item {
+                width: 48%;
+                margin-bottom: 25px;
+            }
+        }
+    }
+    .line_brands {
+        height: 40px;
+
+        .brands {
+            height: 40px;
+            
+        }
+    }
+    .about {
+        padding: 30px 0;
+        .content {
+            .col {
+                width: 100%;
+
+                .col_img {
+                    margin-bottom: 0;
+                }
+                .col_text {
+                    line-height: 20px;
+                    text-align: center;
+                }
+            }
+            .col:last-child {
+                display: none;
+            }
+
+        }
+        .about_button {
+            margin-top: 30px;
+            max-width: 140px;
+            padding: 5px 15px;
+            font-size: 16px;
+        }
+    }
+    .our_insta {
+        padding: 30px 0;
+        .instalogo {
+            margin-bottom: 5px;
+
+            img {
+                width: 10%;
+            }
+        }
+        .title {
+            text-transform: inherit;
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+        .content {
+            .img {
+                margin-bottom: 5px;
+                width: 47%;
+            }
+        }
+        .insta_button {
+            width: 140px;
+            font-size: 16px;
+            padding: 5px 10px;
+            margin-top: 30px;
+        }
+    }
+    .intro {
+        width: 100%;
+        padding: 30px 0;
+        height: auto;
+
+        .intro_text {
+            font-size: 9px;
+        }
+        .intro_input {
+            justify-content: space-between;
+            height: 30px;
+
+            .input_email {
+                width: 57%;
+            }
+            .intro_button {
+                padding: 5px;
+                font-size: 15px;
+                width: 40%;
+            }
+        }
+
+    }
+}

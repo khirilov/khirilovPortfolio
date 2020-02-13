@@ -1,0 +1,53 @@
+.our_insta {
+    height: auto;
+    padding: 90px 0;
+    text-align: center;
+
+    .instalogo {
+        margin-bottom: 20px;
+    }
+    .title {
+        text-transform: uppercase;
+        font-size: 25px;
+        color: #38383b;
+        line-height: 20px;
+        margin-bottom: 60px;
+
+        span {
+            font-size: 14px;
+            text-transform: lowercase;
+        }
+    }
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        .img {
+            margin-bottom: 25px;
+            width: 45%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .insta_button {
+        background-color: #73a2a8;
+        max-width: 200px;
+        color: #ffffff;
+        padding: 10px;
+        text-align: center;
+        margin: 0 auto;
+        border-radius: 5px;
+        margin-top: 50px;
+        font-size: 18px;
+        cursor: pointer;
+        text-decoration: none;
+        display: block;
+
+        &:hover {
+            background: #e46651;
+            transition: 0.5s;
+        }
+    }
+}

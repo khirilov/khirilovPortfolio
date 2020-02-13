@@ -1,0 +1,28 @@
+.line_brands {
+    height: 110px;
+    background-color: #38383b;
+
+    .brands {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 110px;
+
+        .brand {
+            width: 9%;
+            img {
+                width: 95%;
+                overflow: hidden;
+            }
+        }
+        .brand:first-child,
+        .brand:last-child {
+            width: 22%;
+        }
+        
+        img:hover {
+            cursor: pointer;
+            filter: brightness(0%) hue-rotate(60deg) saturate(100%) brightness(0%);
+        }
+    }
+}
